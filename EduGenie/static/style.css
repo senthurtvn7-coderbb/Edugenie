@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #e8ebf2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4f46e5;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #4f46e5;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: #e0e7ff;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #4f46e5;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #5b6475;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card {
+    width: 360px;
+    padding: 45px 35px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(40, 50, 90, 0.12);
+}
+
+.robot {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #687184;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.features,
+.assistant-section,
+.about {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.section-title span {
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin: 10px 0 15px;
+}
+
+.section-title p {
+    color: #697386;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    border: 1px solid #e7eaf0;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(30, 40, 80, 0.1);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #697386;
+}
+
+
+/* =========================
+   AI ASSISTANT
+========================= */
+
+.assistant-section {
+    background: #eef2ff;
+}
+
+.assistant-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(30, 40, 80, 0.08);
+}
+
+.assistant-box label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.assistant-box select,
+.assistant-box textarea {
+    width: 100%;
+    border: 1px solid #d9deea;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+.assistant-box select:focus,
+.assistant-box textarea:focus {
+    border-color: #4f46e5;
+}
+
+.assistant-box textarea {
+    resize: vertical;
+}
+
+#submitButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitButton:hover {
+    background: #3730a3;
+}
+
+#submitButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+    text-align: center;
+    padding: 25px;
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 14px;
+    background: #f8fafc;
+    border: 1px solid #e3e7ef;
+}
+
+.result h3 {
+    margin-bottom: 15px;
+    color: #4f46e5;
+}
+
+#result {
+    white-space: pre-wrap;
+    color: #374151;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-grid > div {
+    padding: 30px;
+    border-radius: 15px;
+    background: #f7f9fc;
+}
+
+.about-grid h3 {
+    margin-bottom: 10px;
+}
+
+.about-grid p {
+    color: #697386;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 45px 8%;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #b8c0ce;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero,
+    .features,
+    .assistant-section,
+    .about {
+        padding: 70px 5%;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assistant-box {
+        padding: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+}

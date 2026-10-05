@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            🎓 EduGenie
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#assistant">AI Assistant</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="badge">✨ AI-Powered Learning</span>
+
+            <h1>
+                Learn Smarter with
+                <span>EduGenie</span>
+            </h1>
+
+            <p>
+                Your personal AI learning assistant for explanations,
+                questions, quizzes, summaries and personalized learning paths.
+            </p>
+
+            <a href="#assistant" class="hero-button">
+                Start Learning →
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+            <div class="robot">🤖</div>
+
+            <h3>Your AI Learning Companion</h3>
+
+            <p>
+                Ask questions, understand difficult concepts,
+                create quizzes and build your learning journey.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <span>WHAT EDU GENIE CAN DO</span>
+            <h2>Everything you need to learn better</h2>
+            <p>
+                Powerful AI tools designed to make studying easier.
+            </p>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="icon">💬</div>
+
+                <h3>Ask Questions</h3>
+
+                <p>
+                    Ask any educational question and get
+                    a clear AI-powered answer.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">💡</div>
+
+                <h3>Explain Topics</h3>
+
+                <p>
+                    Understand difficult topics using
+                    simple explanations and examples.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">📝</div>
+
+                <h3>Generate Quizzes</h3>
+
+                <p>
+                    Create multiple-choice quizzes
+                    to test your knowledge.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">📚</div>
+
+                <h3>Summarize</h3>
+
+                <p>
+                    Turn long study material into
+                    simple and useful summaries.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+
+                <h3>Learning Path</h3>
+
+                <p>
+                    Get a personalized learning path
+                    from beginner to advanced.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+
+                <h3>Personalized Learning</h3>
+
+                <p>
+                    Learn at your own level with
+                    AI-powered recommendations.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI Assistant -->
+    <section class="assistant-section" id="assistant">
+
+        <div class="section-title">
+            <span>YOUR AI TUTOR</span>
+
+            <h2>Ask EduGenie</h2>
+
+            <p>
+                Choose a learning tool and enter your topic.
+            </p>
+        </div>
+
+
+        <div class="assistant-box">
+
+            <label for="task">
+                Choose a task
+            </label>
+
+            <select id="task">
+
+                <option value="qa">
+                    💬 Ask a Question
+                </option>
+
+                <option value="explain">
+                    💡 Explain a Topic
+                </option>
+
+                <option value="quiz">
+                    📝 Generate Quiz
+                </option>
+
+                <option value="summarize">
+                    📚 Summarize Text
+                </option>
+
+                <option value="learning">
+                    🚀 Learning Path
+                </option>
+
+            </select>
+
+
+            <label for="inputText">
+                Enter your question or topic
+            </label>
+
+            <textarea
+                id="inputText"
+                rows="7"
+                placeholder="Example: Explain artificial intelligence in simple words..."
+            ></textarea>
+
+
+            <button id="submitButton">
+                Ask EduGenie ✨
+            </button>
+
+
+            <div id="loading" class="loading hidden">
+                🤖 EduGenie is thinking...
+            </div>
+
+
+            <div id="resultBox" class="result hidden">
+
+                <h3>EduGenie Response</h3>
+
+                <div id="result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+
+            <span>ABOUT EDUGENIE</span>
+
+            <h2>Your Personal Learning Assistant</h2>
+
+            <p>
+                EduGenie uses AI to help students understand,
+                practice and organize their learning.
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div>
+                <h3>🎓 Learn</h3>
+
+                <p>
+                    Get simple explanations for difficult concepts.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>🧠 Practice</h3>
+
+                <p>
+                    Test your knowledge with AI-generated quizzes.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>📈 Improve</h3>
+
+                <p>
+                    Follow personalized learning paths.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            🎓 EduGenie
+        </div>
+
+        <p>
+            AI-powered learning assistant
+        </p>
+
+        <p class="copyright">
+            © 2026 EduGenie. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        const task = document.getElementById("task");
+        const inputText = document.getElementById("inputText");
+        const submitButton = document.getElementById("submitButton");
+
+        const loading = document.getElementById("loading");
+        const resultBox = document.getElementById("resultBox");
+        const result = document.getElementById("result");
+
+
+        task.addEventListener("change", function () {
+
+            if (task.value === "summarize") {
+
+                inputText.placeholder =
+                    "Paste the text you want EduGenie to summarize...";
+
+            } else if (task.value === "qa") {
+
+                inputText.placeholder =
+                    "Example: What is artificial intelligence?";
+
+            } else if (task.value === "explain") {
+
+                inputText.placeholder =
+                    "Example: Explain machine learning in simple words...";
+
+            } else if (task.value === "quiz") {
+
+                inputText.placeholder =
+                    "Example: Create a quiz about Python programming...";
+
+            } else {
+
+                inputText.placeholder =
+                    "Example: Create a learning path for web development...";
+
+            }
+
+        });
+
+
+        submitButton.addEventListener("click", async function () {
+
+            const text = inputText.value.trim();
+
+            if (!text) {
+
+                alert("Please enter a question or topic.");
+
+                return;
+            }
+
+
+            loading.classList.remove("hidden");
+            resultBox.classList.add("hidden");
+
+            submitButton.disabled = true;
+
+
+            let endpoint = "";
+            let body = {};
+
+
+            if (task.value === "qa") {
+
+                endpoint = "/qa";
+
+                body = {
+                    question: text
+                };
+
+            } else if (task.value === "explain") {
+
+                endpoint = "/explain";
+
+                body = {
+                    topic: text
+                };
+
+            } else if (task.value === "quiz") {
+
+                endpoint = "/quiz";
+
+                body = {
+                    topic: text
+                };
+
+            } else if (task.value === "summarize") {
+
+                endpoint = "/summarize";
+
+                body = {
+                    text: text
+                };
+
+            } else if (task.value === "learning") {
+
+                endpoint = "/learn/recommendations";
+
+                body = {
+                    topic: text
+                };
+
+            }
+
+
+            try {
+
+                const response = await fetch(endpoint, {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(body)
+
+                });
+
+
+                const data = await response.json();
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        data.detail || "Something went wrong."
+                    );
+
+                }
+
+
+                result.textContent = data.result || "No response received.";
+
+                resultBox.classList.remove("hidden");
+
+
+            } catch (error) {
+
+                result.textContent =
+                    "Error: " + error.message;
+
+                resultBox.classList.remove("hidden");
+
+            } finally {
+
+                loading.classList.add("hidden");
+
+                submitButton.disabled = false;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
